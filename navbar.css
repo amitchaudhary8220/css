@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    margin:0;
+}
+:root{
+    --primary:rgb(67, 167, 225);
+    --secondary:rgb(98, 95, 233);
+}
+body{
+    background-color: rgb(217, 227, 235);
+    font-family:"Montserrat",sans-serif ;
+}
+.nav{
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(36, 173, 195);
+    /* y-axis x-axis 8px is spread of the shadow and then color of the shadow*/
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.brand{
+    flex:1;
+}
+ .logo{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+.links{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.menulinks{
+    list-style: none;
+    padding: 0;
+    display:flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+.menulinks > li{
+    cursor: pointer;
+    background-image: linear-gradient(120deg,transparent 0%, transparent 50%,var(--primary)50%
+    );
+    background-size: 300%;
+    transition:all 0.4s;
+}
+
+.menulinks> li:hover{
+background-position: right;
+color: rgb(195, 234, 241);
+padding: 8px 20px;
+margin:-8px -20px;
+border-radius: 3px;
+box-shadow: 0 0 5px var(--secondary);
+}
+
+.contact{
+    background-image: linear-gradient(120deg,
+    var(--primary)0%,
+    var(--primary)50%,
+        transparent 50%
+   
+    );
+    padding: 8px 12px;
+    border:2px solid var(--secondary);
+    border-radius: 3px;
+    background-size: 300%;
+    color: white;
+    box-shadow: 0 0 5px var(--secondary);
+    font-size: 15px;
+    transition : all 0.4s;
+}
+.contact:hover{
+    background-position: right;
+    color: black;
+    box-shadow: 0 0 6px var(--secondary);
+}
+
+@media( max-width: 800px) {
+   
+    .nav{
+        padding:0 5%;
+    }
+    
+}

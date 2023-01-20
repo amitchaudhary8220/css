@@ -1,0 +1,71 @@
+/* flex box */
+
+
+
+*{
+    margin: 0;
+}
+
+
+/* align-item and align-content are different
+ */
+
+
+
+.main{
+    display: flex;
+    /* when flex-direction: is row x is axis is main axis and y axis is cross axis in case of column y axis is main aixs and x axis  is cross axis; */
+
+    flex-direction:row;
+    /* flex-wrap:wrap ; */
+    flex-wrap: wrap;
+    justify-content:baseline ;
+    height: 1000px;
+    align-items:center;
+
+
+    /* align-content: center; */
+   
+
+    /* justify-content:flex-start;
+    align-items: baseline; */
+
+
+    /* baseline align the items with respect to their font size */
+    /* align height  bydefault is set to streach which means if we want to streach any perticular item ,then all will be streatched out ,to avoid so , we have to set align-items:center */
+
+    /* when we set direction to row , so justify content will work on x axis and align-items will work on y  axis  vice varse in column  */
+/* 
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around; */
+
+    background-color: antiquewhite;
+}
+.box{
+    padding: 35px;
+    margin: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 30px;
+}
+.b2{
+
+    /*  flex-grow helps to take the empty space by any perticular element  *
+    where as flex-basis helps to take desired space in a window both shirk and grow (means both are responsive) /
+    /* height: 100px; */
+    /* flex-grow: 1; */
+
+    /* flex-basis: 40%;
+    flex-shrink: 0; */
+
+    /* flex-shrink default value is 1 ,and if we want any box to not shrink set it as 0 */
+    /* order:2; */
+
+    /* flex: flex-grow flex-shrink flex-basis*/
+} 
+.b4{
+    /* font-size: 100px; */
+    /* order: -1; */
+} 
+/* order of every div is set to 0  */
